@@ -112,6 +112,11 @@ def main():
     py_files = [f for f in all_files if f.endswith(".py")]
 
     print("\n" + "="*40)
+    print(f"🐍 BẮT ĐẦU PHASE 1: Nộp {len(cpp_files)} bài C++")
+    print("="*40)
+    submit_process(driver, wait, cpp_files, "C++", ".CPP")
+
+    print("\n" + "="*40)
     print(f"🐍 BẮT ĐẦU PHASE 2: Nộp {len(py_files)} bài Python")
     print("="*40)
     submit_process(driver, wait, py_files, "Python 3", ".PY")
